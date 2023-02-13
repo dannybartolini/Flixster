@@ -15,11 +15,12 @@ class MovieCell: UITableViewCell {
     
     /// Configures the cell's UI for the given track.
     func configure(with movie: Movie) {
-        movieNameLabel.text = movie.movieName
-        movieSummaryLabel.text = movie.movieSummary
-//
-//      // Load image async via Nuke library image loading helper method
-        Nuke.loadImage(with: movie.movieImage, into: movieImageView)
+        movieNameLabel.text = movie.title 
+        movieSummaryLabel.text = movie.overview
+        let poster_path_URL = URL(string: "https://image.tmdb.org/t/p/w500" + movie.poster_path)
+////
+////      // Load image async via Nuke library image loading helper method
+        Nuke.loadImage(with: poster_path_URL as! ImageRequestConvertible, into: movieImageView)
     }
     
     

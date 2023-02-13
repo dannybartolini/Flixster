@@ -28,14 +28,19 @@ class DetailViewController: UIViewController {
 
         
         // Load the image located at the `artworkUrl100` URL and set it on the image view.
-        Nuke.loadImage(with: movie.movieImage, into: movieImageView)
-
-        // Set labels with the associated track values.
-        movieNameLabel.text = movie.movieName
-        voteAverage.text = movie.voteAverage
-        voteCount.text = movie.voteCount
-        popularity.text = movie.popularity
-        movieSummary.text = movie.movieSummary
+//        Nuke.loadImage(with: movie.movieImage, into: movieImageView)
+//
+//        // Set labels with the associated track values.
+        movieNameLabel.text = movie.title
+        voteAverage.text = String(format: "%.2f", movie.vote_average) + " vote average"
+        voteCount.text = String(movie.vote_count) + " votes"
+        popularity.text = String(movie.popularity) + " Popularity"
+        movieSummary.text = String(movie.overview)
+        
+        let poster_path_URL = URL(string: "https://image.tmdb.org/t/p/w500" + movie.poster_path)
+////
+////      // Load image async via Nuke library image loading helper method
+        Nuke.loadImage(with: poster_path_URL as! ImageRequestConvertible, into: movieImageView)
 
         
     }
