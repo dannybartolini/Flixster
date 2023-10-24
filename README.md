@@ -1,31 +1,27 @@
-# Project 3 - Flixster PART 2
+nOoff-b Flixster updated version
 
-Submitted by: Daniel Bartolini
+Film app that has updated posters of movies out now or coming soon to theaters. Why go online when I can just open up this iOS app... hmm
 
-Flixster is an app that introduces movies
+p0:
 
-Time spent: 6 hours spent in total
-
-## Required Features
-
-The following **required** functionality is completed:
 
 - [x ] Implement network call and table view to display a list of movies currently playing (title, description, image)
 - [x ] App has a collection view with the same list of movies
+
+  p1:
+  
 - [x ] Uses a tab bar controller to switch between collection view and table view screens
  
-The following **optional** features are implemented:
+optional/p2:
 
 - [ ] Make an additional network call to another end-point.	
-- [ ] Allow users to scroll when context items are off-screen (table view implemention)
-
-The following **additional** features are implemented:
+- [ ] Allow users to scroll when context items are off-screen (table view implementio
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's the completed app
 
 <img src='https://github.com/dannybartolini/Flixster/blob/main/flixster%20pt%202%20test.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -36,11 +32,9 @@ GIF created with ...
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
 
-Describe any challenges encountered while building the app.
 
-## License
+License?
 
     Copyright [2023] [daniel Bartolini]
 
